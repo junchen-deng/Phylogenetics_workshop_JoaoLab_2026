@@ -4,8 +4,8 @@ This workshop aims to give a general introduction to phylogenetics, including th
 ------
 
 The remaining are practices based on real sequencing data from various Ophiocordyceps fungal strains on NCBI. To be able to complete the practice, you will need a computer and the following tools installed:  
-* (FigTree): https://tree.bio.ed.ac.uk/software/figtree/
-*
+* [FigTree](https://tree.bio.ed.ac.uk/software/figtree/) (This is optional. People also use the web tool [iTOL](https://itol.embl.de). We will introduce both tools in the practice) 
+* 
 *
 
 
