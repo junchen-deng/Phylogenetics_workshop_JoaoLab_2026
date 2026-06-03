@@ -6,7 +6,8 @@ This workshop aims to provide a general introduction to phylogenetics, including
 The remaining are practices based on real sequencing data from various Ophiocordyceps fungal strains on NCBI. This section provides a general pipeline of phylogenetic analysis, from sequence alignment to tree inference and visualisation. To be able to complete the practice, you will need a computer and the following tools installed:  
 * [AliView](http://www.ormbunkar.se/aliview/) -- Sequence aligner and alignment visualization tool
 * [FigTree](https://tree.bio.ed.ac.uk/software/figtree/) -- Tree visualisation tool. (This is optional. People also use the web tool [iTOL](https://itol.embl.de). We will introduce both tools in the practice.) 
-* 
+
+------
 *
 
 
