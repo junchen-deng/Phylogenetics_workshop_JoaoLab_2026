@@ -31,5 +31,5 @@ Now, locate the first record of the gene TEF from the search. The first one on m
 
 > :bulb: **Tip:** When searching through literature for sequence information, they usually provide the accession number (e.g., MF416509) of each sequence. One can batch download hundreds of GenBank records with a list of accession numbers. For this purpose, you would need bioinformatics tools, which are out of the scope of this workshop.   
 
-
-Therefore, we want a **rooted tree** that can clearly reflect the relationship between two taxa.   
+# Part 3: Phylogenetic pipeline -- choose the root and taxa
+Our goal requires us to build a **rooted tree**, which can clearly reflect the relationship between two taxa. Finding a proper root is often based on prior knowledge, meaning that we need to go through the literature on a larger phylogenetic scale to find the clade that is monophyletic to our target group (i.e. Ophiocordyceps.)      
