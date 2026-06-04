@@ -14,6 +14,7 @@ Recently, we sequenced a fungal strain labelled as '*Paraisaria amazonica*'; *Pa
 # Part 1: BLAST (Basic Local Alignment Search Tool)
 BLAST is a tool to compare biological sequences (DNA, RNA, and proteins) against a reference database, such as NCBI GenBank, to find regions of similarity. It allows you to have a quick look at the overall identity of your sequences. Here, we have two nuclear marker genes, TEF and rpb1, sequenced for the strain JPMA317. 
 
-1) Download the files JPMA317_TEF.fna and JPMA317_rpb1.fna in this repository. 
-2) Go to [NCBI BLAST webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=blastx). Use your favourite text editor to open the two downloaded files and Copy and paste the sequence 
+1) Download the files JPMA317_TEF.fna and JPMA317_rpb1.fna from this repository. 
+2) Go to [NCBI BLAST webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=blastx). Use your favourite text editor to open the files and copy and paste the sequence into the box. You can stack the two genes and run once, or do two separate runs.
+3) Then click the BLAST button at the bottom. It should be finished in seconds
 
