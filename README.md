@@ -23,7 +23,12 @@ Try to explore the results a bit. What are the top hits? Are they expected? Can 
 # Part 2: Phylogenetic pipeline -- sequence download from GenBank
 I am sure that you would have some uncertainties about the identity of the strain JPMA317 after performing the BLAST search in part 1. This reflects the limitation of using the BLAST search alone for taxonomic assignment. Even though *Paraisaria amazonica* is a strain that has been sequenced many times, the BLAST search sometimes cannot tell. Just pretend that we don't know the 'truth' and let's move on to build a tree instead.
 
-Remember that our goal is to find the placement of the strain JPMA317 in the genus Ophiocordyceps, and we assume that the species is *Paraisaria amazonica*. Let's check if someone has sequenced this strain by searching the phrase 
+Remember that our goal is to find the placement of the strain JPMA317 in the genus Ophiocordyceps, and we assume that the species is *Paraisaria amazonica*. Let's check if someone has sequenced this species by searching for the phrase '**Paraisaria amazonica**' in [GenBank](https://www.ncbi.nlm.nih.gov). Check the records under 'Nucleotide'. What do you see?
+
+Now, locate the first record of the gene TEF from the search. The first one on my search list is the one with the accession number MF416509. To find the sequence, simply click the **FASTA** icon under the record and then copy, paste and save it to a text file. In most cases, you would need to extract more than one sequence. To batch download the records, you can select the boxes on the left of many records  
+
+<img width="573" height="432" alt="Screenshot 2026-06-04 at 16 54 41" src="https://github.com/user-attachments/assets/d057fc59-e6cb-49d4-bbb9-1673bd362d80" />
+
 
 
 Therefore, we want a **rooted tree** that can clearly reflect the relationship between two taxa.   
