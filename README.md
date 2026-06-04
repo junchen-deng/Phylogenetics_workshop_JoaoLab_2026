@@ -18,6 +18,12 @@ BLAST is a tool to compare biological sequences (DNA, RNA, and proteins) against
 2) Go to [NCBI BLAST webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=blastx). Use your favourite text editor to open the files and copy and paste the sequence into the box. You can stack the two genes together or run them separately.
 3) Then click the BLAST button at the bottom. The run should be finished in seconds.
 
-Try to explore the results a bit. What are the top hits? Are they expected? Can you find any records of *Ophiocordyceps* fungi (hint: *Hirsutella* and *Paraisaria* are both within Ophiocordyceps)? Any differences between the results of two markers genes? Why such differences? Can we make any conclusions from these results?    
+Try to explore the results a bit. What are the top hits? Are they expected? Can you find any records of *Ophiocordyceps* fungi (hint: *Hirsutella* and *Paraisaria* are both within Ophiocordyceps)? Any differences between the results of the two marker genes? Why such differences? Can we draw any conclusions from these results?    
+
+# Part 2: Phylogenetic pipeline -- sequence download from GenBank
+I am sure that you would have some uncertainties about the identity of the strain JPMA317 after performing the BLAST search in part 1. This reflects the limitation of using the BLAST search alone for taxonomic assignment. Even though *Paraisaria amazonica* is a strain that has been sequenced many times, the BLAST search sometimes cannot tell. Just pretend that we don't know the 'truth' and let's move on to build a tree instead.
+
+Remember that our goal is to find the placement of the strain JPMA317 in the genus Ophiocordyceps, and we assume that the species is *Paraisaria amazonica*. Let's check if someone has sequenced this strain by searching the phrase 
 
 
+Therefore, we want a **rooted tree** that can clearly reflect the relationship between two taxa.   
