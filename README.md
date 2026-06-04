@@ -25,10 +25,11 @@ I am sure that you would have some uncertainties about the identity of the strai
 
 Remember that our goal is to find the placement of the strain JPMA317 in the genus Ophiocordyceps, and we assume that the species is *Paraisaria amazonica*. Let's check if someone has sequenced this species by searching for the phrase '**Paraisaria amazonica**' in [GenBank](https://www.ncbi.nlm.nih.gov). Check the records under 'Nucleotide'. What do you see?
 
-Now, locate the first record of the gene TEF from the search. The first one on my search list is the one with the accession number MF416509. To find the sequence, simply click the **FASTA** icon under the record and then copy, paste and save it to a text file. In most cases, you would need to extract more than one sequence. To batch download the records, you can select the boxes on the left of many records  
+Now, locate the first record of the gene TEF from the search. The first one on my search list is the one with the accession number MF416509. To find the sequence, simply click the **FASTA** icon under the record and then copy, paste and save it to a text file. In most cases, you would need to extract more than one sequence. To batch download the records, select the boxes on the left of the ones you are interested in, click '**Send to**' on the top right, choose '**Complete Record**', '**File**', format '**FASTA**', and then click '**Create File**'. If no boxes were checked, this action will download all the records that were found. 
 
 <img width="573" height="432" alt="Screenshot 2026-06-04 at 16 54 41" src="https://github.com/user-attachments/assets/d057fc59-e6cb-49d4-bbb9-1673bd362d80" />
 
+> :bulb: **Tip:** When searching through literature for sequence information, they usually provide the accession number (e.g., MF416509) of each sequence. One can batch download hundreds of GenBank records with a list of accession numbers. For this purpose, you would need bioinformatics tools, which are out of the scope of this workshop.   
 
 
 Therefore, we want a **rooted tree** that can clearly reflect the relationship between two taxa.   
