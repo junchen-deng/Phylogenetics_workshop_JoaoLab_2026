@@ -12,7 +12,7 @@ The remaining are practices based on real sequencing data from various *Ophiocor
 Recently, we sequenced a fungal strain labelled as '*Paraisaria amazonica*'; *Paraisaria* is a genus within *Ophiocordyceps*. Our goal is to verify its identity (i.e. if the species is indeed as labelled). This is usually achieved by taxonomic assignment with BLAST tools and phylogenetic reconstruction. We will practice both here.  
 
 # Part 1: BLAST (Basic Local Alignment Search Tool)
+BLAST is a tool to compare biological sequences (DNA, RNA, and proteins) against a reference database, such as NCBI GenBank, to find regions of similarity. It allows you to have a quick look at the overall identity of your sequences. 
 
-
-
+1) Download the files JPMA317_TEF.fna and JPMA317_rpb1.fna in this repository. You can open them with any text editor if you want to have a peek.
 
