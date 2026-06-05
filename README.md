@@ -56,11 +56,11 @@ Now let's do the alignment! We will use the tool **AliView**, which is great for
 <img width="433" height="230" alt="Screenshot 2026-06-05 at 13 04 23" src="https://github.com/user-attachments/assets/2b26ef48-8fd8-4e35-b7d2-668911e64ebe" />
 
 3) Now, click the action '**Align**' and choose **Realign everything as Translated Amino Acids**. 
-> :warning: **Warning:** You should always align nucleotide sequences as translated amino acids when working with protein-coding genes because this is biologically correct. Unfortunately, many studies failed to do this. In addition, sequences that you download or get from sequencing companies are not always free of stop codons and indels. You sometimes need to manually fix them. When it comes to hundreds of sequences, this can be difficult and time-consuming. This is where bioinformatics shines. 
+> :warning: **Warning:** You should always align nucleotide sequences as translated amino acids when working with protein-coding genes because this is biologically correct. Unfortunately, many studies failed to do this. In addition, sequences that you download or get from sequencing companies are not always free of stop codons and indels. Sometimes they can even be revered! You need to manually fix them. When it comes to hundreds of sequences, this can be difficult and time-consuming. This is where bioinformatics shines. 
 
 <img width="390" height="365" alt="Screenshot 2026-06-05 at 13 16 53" src="https://github.com/user-attachments/assets/5fd053cc-c333-427e-8940-78219f6eac89" />
 
-
+4) Examine the alignment. Are you satisfied? Maybe not 100%. You might have noticed the long tails at the ends and some misaligned regions. The length difference is because people often amplify only part of the marker gene as the barcode, but genes extracted from genomes are often in full length. The misalignment can be due to sequencing errors. But at least 
 
 > :bulb: **Tip:**
 
