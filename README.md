@@ -68,8 +68,8 @@ Now let's do the alignment! We will use the tool **AliView**, which is great for
 The goal of trimming is to reduce the errors and enrich the phylogenetically informative regions, which means to remove large misalignments and low-density regions (i.e., tails; regions retained by only a small percentage of samples (<60%)). I would do the following: 
 
 For TEF:
-<img width="1058" height="218" alt="Screenshot 2026-06-05 at 15 36 12" src="https://github.com/user-attachments/assets/a2971ab4-0f95-431d-a55c-956464d3dd79" />
-<img width="985" height="208" alt="Screenshot 2026-06-05 at 15 41 26" src="https://github.com/user-attachments/assets/851c0eef-f4b2-47de-a735-9d42173a0da3" />  
+<img width="902" height="209" alt="Screenshot 2026-06-05 at 21 11 47" src="https://github.com/user-attachments/assets/51dc7df5-fcf5-4d27-bfa7-8819d10b1607" />
+<img width="910" height="212" alt="Screenshot 2026-06-05 at 21 13 44" src="https://github.com/user-attachments/assets/70b24c71-c00d-4011-be3a-bd26f18f4f97" />
 
 For rpb1: 
 <img width="1055" height="225" alt="Screenshot 2026-06-05 at 15 43 36" src="https://github.com/user-attachments/assets/353cdf06-fb31-4102-8a53-bd077589ed23" />
