@@ -36,7 +36,9 @@ Our goal requires us to build a **rooted tree**, which can clearly reflect the r
 
 Download the paper '**Sung et al. 2008.pdf**' in this repository, and check **Figure 2**, which shows a phylogeny of Hypocreales fungi. Which clade would be your best candidate for choosing an outgroup for Ophiocordyceps phylogeny?  
 
-If you already have an answer, but you are still unsure, looking for a published Ophiocordyceps phylogeny might be a good option. Download the figure '**Zhuang et al. 2005 Figure 3.png**', which shows an Ophiocordyceps phylogeny. Do you choose the same outgroup as they did (hint: *Tolypocladium* is equal to *Elaphocordyceps*)?   
+If you already have an answer, but you are still unsure, looking for a published Ophiocordyceps phylogeny might be a good option. Download the figure '**Zhuang et al. 2005 Figure 3.png**' in this repository, which shows an Ophiocordyceps phylogeny. Do you choose the same outgroup as they did (hint: *Tolypocladium* is equal to *Elaphocordyceps*)?   
 
 # Part 4: Phylogenetic pipeline -- prepare your list of sequences and alignment
-Because we want to know whether the JPMA317 is *Paraisaria amazonica* or not, we need to sample both broadly and specifically, meaning that we need to collect sequences for multiple Ophiocordyceps clades and *Paraisaria amazonica* strains.      
+Because we want to know whether the JPMA317 is *Paraisaria amazonica*, we need to sample both broadly and specifically, meaning that we need to collect sequences from multiple Ophiocordyceps clades and from *Paraisaria amazonica* strains. 
+
+Check the figure '**Zhuang et al. 2005 Figure 3.png**' again. How many Ophiocordyceps clades does it define? 
