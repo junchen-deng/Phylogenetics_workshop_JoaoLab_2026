@@ -1,4 +1,4 @@
-# Phylogenetics Workshop for beginners and non-bioinformaticists - João's Lab - 20260608
+# Phylogenetics Workshop for beginners and non-bioinformaticists
 This workshop aims to provide a general introduction to phylogenetics, including theories of molecular evolution, mathematical substitution models of sequence evolution, tree inference methods, and bootstrapping. The workshop consists of two parts: theory and practice. You can find the lecture in PowerPoint format inside this repository. 
 
 ------
@@ -86,4 +86,6 @@ An example of one erroneous region in one sequence (indicated by the yellow arro
 
 # Part 5: Phylogenetic pipeline -- gene concatenation 
 
+
+bin/iqtree3 -p workshop --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
 
