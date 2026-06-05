@@ -32,9 +32,11 @@ Now, locate the first record of the gene TEF from the search. The first one on m
 > :bulb: **Tip:** When searching through literature for sequence information, you will often find the accession number (e.g., MF416509) of each sequence. You can batch download hundreds of GenBank records with a list of accession numbers. For this purpose, you will need bioinformatics tools, which are out of the scope of this workshop.
 
 # Part 3: Phylogenetic pipeline -- choose the root and taxa
-Our goal requires us to build a **rooted tree**, which can clearly reflects the relationships among taxa. Finding a proper root is often based on prior knowledge, meaning that you need to go through the literature on a larger phylogenetic scale to find the clade that is monophyletic to our target group (i.e., Ophiocordyceps).
+Our goal requires us to build a **rooted tree**, which can clearly reflect the relationships among taxa. Finding a proper root is often based on prior knowledge, meaning that you need to go through the literature on a larger phylogenetic scale to find the clade that is monophyletic to our target group (i.e., Ophiocordyceps).
 
-Download the paper '**Sung et al. 2008.pdf**' in this repository, and check **Figure 2**, which shows a phylogeny of Hypocreales fungi. Which clade would be your best candidate for choosing a outgroup for Ophiocordyceps phylogeny?  
+Download the paper '**Sung et al. 2008.pdf**' in this repository, and check **Figure 2**, which shows a phylogeny of Hypocreales fungi. Which clade would be your best candidate for choosing an outgroup for Ophiocordyceps phylogeny?  
 
+If you already have an answer, but you are still unsure, looking for a published Ophiocordyceps phylogeny might be a good option. Download the figure '**Zhuang et al. 2005 Figure 3.png**', which shows an Ophiocordyceps phylogeny. Do you choose the same outgroup as they did (hint: *Tolypocladium* is equal to *Elaphocordyceps*)?   
 
-
+# Part 4: Phylogenetic pipeline -- prepare your list of sequences and alignment
+Because we want to know whether the JPMA317 is *Paraisaria amazonica* or not, we need to sample both broadly and specifically, meaning that we need to collect sequences for multiple Ophiocordyceps clades and *Paraisaria amazonica* strains.      
