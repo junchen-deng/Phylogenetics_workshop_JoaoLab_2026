@@ -118,8 +118,8 @@ Take a look at the tree. Where is JPMA317? Is this what you expected? Compare th
 [DTU Computational Molecular Evolution course](https://teaching.healthtech.dtu.dk/22115/index.php/22115_-_Computational_Molecular_Evolution#Week_1_(February_4):_Introduction_to_evolutionary_theory_and_population_genetics._Models_of_growth,_selection_and_mutation)  
 [Free book 'Phylogenetics in the Genomic Era'](https://inria.hal.science/PGE/page/table-of-contents)
 
-Junchen Deng
-20260608
+Author: Junchen Deng  
+Time: 20260608
 
 
 
