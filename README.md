@@ -50,18 +50,27 @@ Download the files '**TEF.fna**' and '**rpb1.fna**' in this repository and exami
 Now let's do the alignment! We will use the tool **AliView**, which is great for visualising your list of sequences and alignment. 
 
 1) Open **AliView**; copy and paste all sequences of '**TEF.fna**' and '**rpb1.fna**' in two separate windows.
-> :warning: **Warning:** You can also drag the file onto the screen, but this will make you edit the original file. Always remember to keep the original file untouched! You don't want to look for them again one by one from NCBI.)  
+> :warning: **Warning:** You can also drag the file onto the screen, but this will make you edit the original file. Always remember to keep the original file untouched! You don't want to look for the sequences again one by one from NCBI.)  
 2) Play a bit with the options at the top of the panel. The most important option for our purpose is **nucleotide translation**.
 
 <img width="433" height="230" alt="Screenshot 2026-06-05 at 13 04 23" src="https://github.com/user-attachments/assets/2b26ef48-8fd8-4e35-b7d2-668911e64ebe" />
 
 3) Now, click the action '**Align**' and choose **Realign everything as Translated Amino Acids**. 
-> :warning: **Warning:** You should always align nucleotide sequences as translated amino acids when working with protein-coding genes because this is biologically correct. Unfortunately, many studies failed to do this. In addition, sequences that you download or get from sequencing companies are not always free of stop codons and indels. Sometimes they can even be revered! You need to manually fix them. When it comes to hundreds of sequences, this can be difficult and time-consuming. This is where bioinformatics shines. 
+> :warning: **Warning:** You should always align nucleotide sequences as translated amino acids when working with protein-coding genes because this is biologically correct. Unfortunately, many studies failed to do this. In addition, sequences that you download or get from sequencing companies are not always free of stop codons and indels. Sometimes they can even be reversed! You need to manually fix them. When it comes to hundreds of sequences, this can be difficult and time-consuming to finish by hand. This is where bioinformatics shines. 
 
 <img width="390" height="365" alt="Screenshot 2026-06-05 at 13 16 53" src="https://github.com/user-attachments/assets/5fd053cc-c333-427e-8940-78219f6eac89" />
 
-4) Examine the alignment. Are you satisfied? The core region is aligned well, but you might have noticed the long tails at the ends and some misaligned regions. The length difference is because people often amplify only part of the marker gene as the barcode, but genes extracted from genomes are often in full length. The misalignment can be due to sequencing errors. It is recommended to trim them. There are tools (e.g., trimal) that can help to trim alignments, but you can do it manually for a few genes.
+4) Examine the alignment. How satisfied are you? The core region is aligned well, but you might have noticed the long tails at the ends and some misaligned regions. The length difference is because people often amplify only part of the marker gene as the barcode, but genes extracted from genomes are often in full length. The misalignment can be due to sequencing errors. It is recommended to trim them. There are tools (e.g., trimal) that can help to trim alignments, but you can do it manually for a few genes.
 
+The goal of trimming is to reduce the errors and enrich the phylogenetically informative regions, which means to remove large misalignments and low-density regions (i.e., tails; regions retained by only a small percentage of samples (<60%)). I would do the following: 
+
+For TEF:
+<img width="1058" height="218" alt="Screenshot 2026-06-05 at 15 36 12" src="https://github.com/user-attachments/assets/a2971ab4-0f95-431d-a55c-956464d3dd79" />
+<img width="985" height="208" alt="Screenshot 2026-06-05 at 15 41 26" src="https://github.com/user-attachments/assets/851c0eef-f4b2-47de-a735-9d42173a0da3" />  
+
+For rpb1: 
+<img width="1055" height="225" alt="Screenshot 2026-06-05 at 15 43 36" src="https://github.com/user-attachments/assets/353cdf06-fb31-4102-8a53-bd077589ed23" />
+<img width="1074" height="212" alt="Screenshot 2026-06-05 at 15 45 36" src="https://github.com/user-attachments/assets/0d10c505-b832-41c6-8a44-282421942c4a" />
 
 
 > :bulb: **Tip:**
