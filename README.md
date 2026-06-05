@@ -95,14 +95,13 @@ We have everything ready for the tree! We will use the tool **IQTREE** for this 
 bin/iqtree3 -p data --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
 ```
 
-5) Locate the path of the folder. (Open the command Prompt window, then you can run **cd** to go to the folder, and run **pwd** to print the current working directory.) If you don't know what to do, just create the folder inside the IQTREE folder. 
+To understand what each argument does, run '**bin/iqtree3 --help** ' in the Prompt window. We have two genes, and each of them likely fits with a different model. Therefore, it is best to separate them (i.e., **partition by gene**). **-p** usually takes in a partition file. However, IQTREE can do the partition automatically if you input a data folder. This is what we are doing here. **--prefix** sets the prefix to the names of all output files. **-m** sets the model. **MFP** automatically determines the best-fit model by testing all available models (i.e., **Model Selection**), and **MERGE** merges partitions to increase model fit (i.e., if multiple partitions fit similar models, treating them as one may be better). **-B** enables Ultra-fast bootstrapping and **--alrt** enables SH-aLRT bootstrapping.   
 
-<img width="631" height="92" alt="Screenshot 2026-06-05 at 22 52 14" src="https://github.com/user-attachments/assets/5e107918-e68a-4e75-8a59-f494841a3c99" />
-
-
-
-
+If you have time, you can run IQTREE on a single alignment, TEF or rpb1, and compare the results later. The command is like this: 
 
 ```
-bin/iqtree3 -p workshop --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
+bin/iqtree3 -s PATH_TO_THE_ALIGNMENT --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
 ```
+
+
+
