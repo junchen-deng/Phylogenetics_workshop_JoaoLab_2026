@@ -1,0 +1,78 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=13;
+TAXLABELS
+[1] 'JPMA317'
+[2] 'Tolypocladium_inflatum'
+[3] 'Tolypocladium_ophioglossoides'
+[4] 'Ophiocordyceps_ravenelii_OSC_110995_COL'
+[5] 'Paraisaria_amazonica_HUA_186143_ORT'
+[6] 'Paraisaria_amazonica_HUA_186136'
+[7] 'Paraisaria_amazonica_HUA_186100'
+[8] 'Ophiocordyceps_sobolifera_TNS_F18521_HEM'
+[9] 'Ophiocordyceps_longissima_HMAS_199600_HEM'
+[10] 'Ophiocordyceps_sphecocephala_OSC_110998_HYM'
+[11] 'Ophiocordyceps_nutans_NBRC_100944_HEM'
+[12] 'Ophiocordyceps_sinensis_EFCC_7287_LEP'
+[13] 'Ophiocordyceps_unilateralis_OSC_128574_HYM'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=13 nsplits=50;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 2 3,
+	100	 10,
+	100	 11,
+	100	 10 11,
+	72	 2 3 10 11,
+	100	 4,
+	100	 8,
+	100	 9,
+	100	 8 9,
+	23	 4 8 9,
+	19	 1 5 6 7 12 13,
+	100	 12,
+	100	 13,
+	99	 12 13,
+	100	 1 5 6 7,
+	100	 5,
+	100	 7,
+	100	 5 7,
+	95	 1 6,
+	100	 6,
+	100	 1,
+	4	 8 9 10 11,
+	12	 8 9 10 11 12 13,
+	42	 1 4 5 6 7,
+	25	 8 9 12 13,
+	4	 2 3 4,
+	6	 2 3 4 12 13,
+	27	 1 5 6 7 8 9,
+	9	 2 3 8 9 10 11,
+	15	 10 11 12 13,
+	1	 4 10 11 12 13,
+	1	 2 3 8 9,
+	20	 4 12 13,
+	11	 2 3 10 11 12 13,
+	2	 1 5 7,
+	2	 5 6 7,
+	1	 2 3 12 13,
+	3	 4 8 9 12 13,
+	3	 2 3 4 10 11,
+	0	 1 6 7,
+	1	 1 2 3 5 6 7,
+	0	 1 5 6,
+	1	 10 11 13,
+	1	 2 3 4 8 9,
+	0	 1 5 6 7 10 11,
+	1	 4 8 9 10 11,
+	0	 8 9 13,
+	0	 2 3 8 9 12 13,
+;
+END; [Splits]
+

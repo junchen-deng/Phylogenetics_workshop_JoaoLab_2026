@@ -1,0 +1,6 @@
+#nexus
+begin sets;
+  charset TEF_trimmed.fna_rpb1_trimmed.fna = workshop/TEF_trimmed.fna,workshop/rpb1_trimmed.fna: ;
+  charpartition mymodels =
+    TN+F+G4: TEF_trimmed.fna_rpb1_trimmed.fna;
+end;

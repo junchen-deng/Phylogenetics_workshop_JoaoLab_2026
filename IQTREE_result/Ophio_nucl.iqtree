@@ -1,0 +1,192 @@
+IQ-TREE 3.1.2 built May  7 2026
+
+Partition file name: workshop
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 963265
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 13 taxa with 1 partitions and 1389 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	13	1389	422	340	905	905	TEF_trimmed.fna+rpb1_trimmed.fna
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TN+F+G4:TEF_trimmed.fna+rpb1_trimmed.fna
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TN+F+G4           -6356.930   12727.859 +        0   12727.940 + 4.15e-314   12764.513 + 3.03e-314
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TN+F+G4        1.0000  TN{1.90776,7.23398}+F{0.22692,0.325781,0.266518,0.18078}+G4{0.263905}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6356.8197 (s.e. 159.0482)
+Unconstrained log-likelihood (without tree): -5784.3315
+Number of free parameters (#branches + #model parameters): 29
+Akaike information criterion (AIC) score: 12771.6393
+Corrected Akaike information criterion (AICc) score: 12772.9197
+Bayesian information criterion (BIC) score: 12923.4931
+
+Marginal log-likelihood of the tree: -6356.8197
+Marginal Akaike information criterion (mAIC) score: 12771.6393
+
+Total tree length (sum of branch lengths): 1.0501
+Sum of internal branch lengths: 0.4208 (40.0676% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'JPMA317' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++**JPMA317
+|
+|                                  +--Tolypocladium_inflatum
+|                        +---------| (100/100)
+|                        |         +-----Tolypocladium_ophioglossoides
+|                     +--| (91.4/72)
+|                     |  |            +----------------Ophiocordyceps_sphecocephala_OSC_110998_HYM
+|                     |  +------------| (99.9/100)
+|                     |               +---------------------Ophiocordyceps_nutans_NBRC_100944_HEM
+|                  +--| (86.8/42)
+|                  |  |             +----Ophiocordyceps_sobolifera_TNS_F18521_HEM
+|                  |  |  +----------| (100/100)
+|                  |  |  |          +--Ophiocordyceps_longissima_HMAS_199600_HEM
+|                  |  +--| (61.5/25)
+|                  |     |        +--------------Ophiocordyceps_sinensis_EFCC_7287_LEP
+|                  |     +--------| (99.8/99)
+|                  |              +---------------Ophiocordyceps_unilateralis_OSC_128574_HYM
+|  +---------------| (100/100)
+|  |               +-------------Ophiocordyceps_ravenelii_OSC_110995_COL
++--| (92.8/95)
+|  |  +**Paraisaria_amazonica_HUA_186143_ORT
+|  +--| (98.2/100)
+|     +**Paraisaria_amazonica_HUA_186100
+|
++**Paraisaria_amazonica_HUA_186136
+
+Tree in newick format:
+
+(JPMA317:0.0000010000,(((((Tolypocladium_inflatum:0.0197398987,Tolypocladium_ophioglossoides:0.0370829346)100/100:0.0626219986,(Ophiocordyceps_sphecocephala_OSC_110998_HYM:0.1061647946,Ophiocordyceps_nutans_NBRC_100944_HEM:0.1349398092)99.9/100:0.0804998264)91.4/72:0.0208912521,((Ophiocordyceps_sobolifera_TNS_F18521_HEM:0.0322158537,Ophiocordyceps_longissima_HMAS_199600_HEM:0.0137547230)100/100:0.0695416946,(Ophiocordyceps_sinensis_EFCC_7287_LEP:0.0892848516,Ophiocordyceps_unilateralis_OSC_128574_HYM:0.0958866303)99.8/99:0.0582564311)61.5/25:0.0101004057)86.8/42:0.0126984177,Ophiocordyceps_ravenelii_OSC_110995_COL:0.0867173301)100/100:0.0980303613,(Paraisaria_amazonica_HUA_186143_ORT:0.0006864260,Paraisaria_amazonica_HUA_186100:0.0000010000)98.2/100:0.0121698770)92.8/95:0.0081185559,Paraisaria_amazonica_HUA_186136:0.0007180721);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6356.823606
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--JPMA317
+|
+|                                  +--Tolypocladium_inflatum
+|                        +---------| (100)
+|                        |         +-----Tolypocladium_ophioglossoides
+|                     +--| (72)
+|                     |  |            +----------------Ophiocordyceps_sphecocephala_OSC_110998_HYM
+|                     |  +------------| (100)
+|                     |               +---------------------Ophiocordyceps_nutans_NBRC_100944_HEM
+|                  +--| (42)
+|                  |  |             +----Ophiocordyceps_sobolifera_TNS_F18521_HEM
+|                  |  |  +----------| (100)
+|                  |  |  |          +--Ophiocordyceps_longissima_HMAS_199600_HEM
+|                  |  +--| (25)
+|                  |     |        +--------------Ophiocordyceps_sinensis_EFCC_7287_LEP
+|                  |     +--------| (99)
+|                  |              +---------------Ophiocordyceps_unilateralis_OSC_128574_HYM
+|  +---------------| (100)
+|  |               +-------------Ophiocordyceps_ravenelii_OSC_110995_COL
++--| (95)
+|  |  +--Paraisaria_amazonica_HUA_186143_ORT
+|  +--| (100)
+|     +--Paraisaria_amazonica_HUA_186100
+|
++--Paraisaria_amazonica_HUA_186136
+
+
+Consensus tree in newick format: 
+
+(JPMA317:0.0000024075,(((((Tolypocladium_inflatum:0.0197121525,Tolypocladium_ophioglossoides:0.0370992475)100:0.0626626504,(Ophiocordyceps_sphecocephala_OSC_110998_HYM:0.1061718590,Ophiocordyceps_nutans_NBRC_100944_HEM:0.1349717531)100:0.0805258458)72:0.0208750702,((Ophiocordyceps_sobolifera_TNS_F18521_HEM:0.0322128452,Ophiocordyceps_longissima_HMAS_199600_HEM:0.0137553879)100:0.0695313081,(Ophiocordyceps_sinensis_EFCC_7287_LEP:0.0893090770,Ophiocordyceps_unilateralis_OSC_128574_HYM:0.0958806561)99:0.0582635316)25:0.0101157741)42:0.0126982048,Ophiocordyceps_ravenelii_OSC_110995_COL:0.0867160510)100:0.0980318130,(Paraisaria_amazonica_HUA_186143_ORT:0.0006870974,Paraisaria_amazonica_HUA_186100:0.0000024075)100:0.0121622364)95:0.0081217696,Paraisaria_amazonica_HUA_186136:0.0007180895);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Ophio_nucl.treefile -p Ophio_nucl.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Jun  5 21:19:49 2026
+Total CPU time used: 1.930409 seconds (0h:0m:1s)
+Total wall-clock time used: 1.980720043 seconds (0h:0m:1s)
+
