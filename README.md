@@ -47,8 +47,9 @@ As mentioned above, literature often provides a list of accession numbers in the
 
 Download the files '**TEF.fna**' and '**rpb1.fna**' in this repository and examine the content. You might have noticed in Part 1 that the downloaded sequences often have a long header. I personally prefer to shorten it and replace all **spaces** with **underscores** to avoid troubles in some software. (**underscore** is your best friend when preparing text files!!!)  
 
-Now let's do the alignment! We will use the tool **AliView**, which is great for viewing your list of sequences and alignment. 
+Now let's do the alignment! We will use the tool **AliView**, which is great for visualising your list of sequences and alignment. 
 
-1) 
+1) Open **AliView**; Copy and paste all sequences of '**TEF.fna**' inside.
+> :warning: **Warning:** You can also drag the file onto the screen, but be careful that this will make you edit the original file. )
 
 > :warning: **Warning:**
