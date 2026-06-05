@@ -112,7 +112,9 @@ Launch the software **FigTree**. Go to **File**, **Open...**. Choose to open the
 
 Take a look at the tree. Where is JPMA317? Is this what you expected? Compare the topology of other taxa with the Ophiocordyceps tree in the figure '**Zhuang et al. 2005 Figure 3.png**. Are they similar? Look at the bootstrap numbers. Are you confident with this topology?
 
-> :bulb: **Tip:** Other output files contain information about model selection and the tree itself. For example, you will find out which bootstrap number represents which bootstrapping method in the file **Ophio_nucl.iqtree**. The number at the bottom of the tree (e.g., 0.04) indicates the estimated number of nucleotide substitutions per site. It is one way to calculate the **genetic distance** between two taxa. 
+> :bulb: **Tip:** Other output files contain information about model selection and the tree itself. For example, you will find out which bootstrap number represents which bootstrapping method in the file **Ophio_nucl.iqtree**. The number at the bottom of the tree (e.g., 0.04) indicates the estimated number of nucleotide substitutions per site. It is one way to calculate the **genetic distance** between two taxa.  
+
+> Additionally, there are other free tools to visualise the tree, such as the website [iTOL](https://itol.embl.de). It may provide more functions than FigTree. But I often just save the tree in PDF and use a vector image editor, such as [Inkscape](https://inkscape.org), to do further editing. 
 
 # Additional resources for nerds
 [DTU Computational Molecular Evolution course](https://teaching.healthtech.dtu.dk/22115/index.php/22115_-_Computational_Molecular_Evolution#Week_1_(February_4):_Introduction_to_evolutionary_theory_and_population_genetics._Models_of_growth,_selection_and_mutation)  
