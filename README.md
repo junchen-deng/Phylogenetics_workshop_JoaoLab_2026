@@ -87,7 +87,15 @@ An example of one erroneous region in one sequence (indicated by the yellow arro
 # Part 5: Phylogenetic pipeline -- tree inference (with gene concatenation, gene partition, model selection, and bootstrapping) and a bit of bioinformatics
 We have everything ready for the tree! We will use the tool **IQTREE** for this purpose. You can check [the installation guide](https://iqtree.github.io/doc/Quickstart) again if you have questions running the tool. 
 
-1) 
+1) Within the IQTREE installation folder, create a new folder and put both **TEF_trimmed.fna** and **rpb1_trimmed.fna** inside (It's only to make it easy for everyone. But if you understand a bit more of bioinformatics, you can have this new folder anywhere)  
+2) Locate the path of the folder. (Open the command Prompt window, then you can run **cd** to go to any folder, and run **pwd** to print the current working directory.) If you don't know what to do, just create the folder inside the IQTREE folder. 
 
+<img width="631" height="92" alt="Screenshot 2026-06-05 at 22 52 14" src="https://github.com/user-attachments/assets/5e107918-e68a-4e75-8a59-f494841a3c99" />
+
+
+
+
+
+```
 bin/iqtree3 -p workshop --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
-
+```
