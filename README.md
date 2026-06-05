@@ -6,7 +6,7 @@ This workshop aims to provide a general introduction to phylogenetics, including
 The remaining are practices based on real sequencing data from various *Ophiocordyceps* fungi. This section provides a general pipeline of phylogenetic analysis, from sequence download, alignment, and visualisation, to tree inference and visualisation. To be able to complete the practice, you will need a computer and the following tools installed:  
 * [AliView](http://www.ormbunkar.se/aliview/) -- Sequence aligner and alignment visualization tool
 * [IQ-TREE](https://iqtree.github.io) -- Maximum-likelihood tree inference software. Choose the iqtree3 version for your PC system, and follow [the installation guide](https://iqtree.github.io/doc/Quickstart) 
-* [FigTree](https://tree.bio.ed.ac.uk/software/figtree/) -- Tree visualisation tool. (This is optional. People also use the web tool [iTOL](https://itol.embl.de). We will introduce both tools in the practice.) 
+* [FigTree](https://tree.bio.ed.ac.uk/software/figtree/) -- Tree visualisation tool. 
 
 ------
 # General introduction to the tasks
@@ -103,8 +103,10 @@ If you have time, you can run IQTREE on a single alignment, TEF or rpb1, and com
 bin/iqtree3 -s PATH_TO_THE_ALIGNMENT --prefix Ophio_nucl -m MFP -B 1000 --alrt 1000
 ```
 
+> :bulb: **Tip:** There are many different ways of partitioning your alignment (e.g., partition by codon). In this case, you will need to prepare your own partition file and include both **-s** (for data) and **-p** (for partition).  
+
 # Part 6: Phylogenetic pipeline -- tree visualisation 
 If IQTREE runs successfully, it will produce a long series of logs on the screen. The output files are generated in the location where you run IQTREE. In our case, this will be the IQTREE installation folder. You can also find the output of the run I did under the folder **IQTREE_result** in this repository. 
 
-Launch the software **FigTree**. Go to **File**, **Open...**. Choose to open the file **Ophio_nucl.treefile**, which stores the tree in **Newick** format.  
+Launch the software **FigTree**. Go to **File**, **Open...**. Choose to open the file **Ophio_nucl.treefile**, which stores the tree in **Newick** format. In the pop-up window, set the name to **bootstrap**. Select the branch leading to the two outgroups and click **Reroot** on the top panel. Go to **Trees** on the left panel, tick the box of **Order nodes** and select **decreasing**. Go to **Tip labels** and increase the **Font size** as you want. Tick the box of **Branch Labels**. Choose **bootstrap** for **Display** and increase the font size a bit. Now the tree should look prettier. Go to **File**, **Export PDF...** to save your tree for future editing. (This tree is also inside the folder **IQTREE_result** in this repository under the name **Ophio_nucl.pdf**)
 
