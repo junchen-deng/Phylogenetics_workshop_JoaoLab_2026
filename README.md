@@ -50,6 +50,17 @@ Download the files '**TEF.fna**' and '**rpb1.fna**' in this repository and exami
 Now let's do the alignment! We will use the tool **AliView**, which is great for visualising your list of sequences and alignment. 
 
 1) Open **AliView**; Copy and paste all sequences of '**TEF.fna**' inside.
-> :warning: **Warning:** You can also drag the file onto the screen, but be careful that this will make you edit the original file. )
+> :warning: **Warning:** You can also drag the file onto the screen, but this will make you edit the original file. Always remember to keep the original file untouched! You don't want to look for them again one by one from NCBI.)  
+2) Play a bit with the options at the top of the panel. The most important option for our purpose is **nucleotide translation**.
 
-> :warning: **Warning:**
+<img width="433" height="230" alt="Screenshot 2026-06-05 at 13 04 23" src="https://github.com/user-attachments/assets/2b26ef48-8fd8-4e35-b7d2-668911e64ebe" />
+
+3) Now, click the action '**Align**' and choose **Realign everything as Translated Amino Acids**.
+
+<img width="400" height="373" alt="Screenshot 2026-06-05 at 13 13 34" src="https://github.com/user-attachments/assets/609962a7-72f8-453d-a197-410108e0098f" />  
+
+
+ 
+
+> :bulb: **Tip:**
+
