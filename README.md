@@ -39,6 +39,8 @@ Download the paper '**Sung et al. 2008.pdf**' in this repository, and check **Fi
 If you already have an answer, but you are still unsure, looking for a published Ophiocordyceps phylogeny might be a good option. Download the figure '**Zhuang et al. 2005 Figure 3.png**' in this repository, which shows an Ophiocordyceps phylogeny. Do you choose the same outgroup as they did (hint: *Tolypocladium* is equal to *Elaphocordyceps*)?   
 
 # Part 4: Phylogenetic pipeline -- prepare your list of sequences and alignment
-Because we want to know whether the JPMA317 is *Paraisaria amazonica*, we need to sample both broadly and specifically, meaning that we need to collect sequences from multiple Ophiocordyceps clades and from *Paraisaria amazonica* strains. 
+Because we want to know whether the JPMA317 is *Paraisaria amazonica*, we need to sample broadly and specifically, meaning that we need to collect sequences from multiple Ophiocordyceps clades and from multiple *Paraisaria amazonica* strains. 
 
 Check the figure '**Zhuang et al. 2005 Figure 3.png**' again. How many Ophiocordyceps clades does it define? 
+
+As mentioned before, literature often provides a list of accession numbers in the text or in the supplementary data. Then, you can use these numbers to look for sequences of interest in databases like NCBI GenBank. This is often time-consuming. Therefore, I have prepared a list of sequences for you.   
