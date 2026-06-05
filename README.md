@@ -74,7 +74,7 @@ For rpb1:
 
 > :bulb: **Tip:** Tree inference algorithms are often quite robust. They allow a few percentages of errors and low-density regions. The output tree topologies are often similar. However, the impact can be amplified in a small dataset of a few genes. The best practice is to remove them. Sometimes, errors may occur only in some region within a single sequence. You can often spot it in the alignment, and you should try to trim it from this sequence. 
 
-This sequence (indicated by the yellow arrow) doesn't look right:
+An example of one erroneous region in one sequence (indicated by the yellow arrow), which doesn't look right:
 <img width="1307" height="520" alt="Screenshot 2026-06-05 at 16 09 33" src="https://github.com/user-attachments/assets/325abff0-fa79-477b-94e8-d7c85a2b7627" />
 
 
