@@ -100,8 +100,11 @@ To understand what each argument does, run '**bin/iqtree3 --help** ' in the Prom
 If you have time, you can run IQTREE on a single alignment, TEF or rpb1, and compare the results later. The command is like this: 
 
 ```
-bin/iqtree3 -s PATH_TO_THE_ALIGNMENT --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
+bin/iqtree3 -s PATH_TO_THE_ALIGNMENT --prefix Ophio_nucl -m MFP -B 1000 --alrt 1000
 ```
 
+# Part 6: Phylogenetic pipeline -- tree visualisation 
+If IQTREE runs successfully, it will produce a long series of logs on the screen. The output files are generated in the location where you run IQTREE. In our case, this will be the IQTREE installation folder. You can also find the output of the run I did under the folder **IQTREE_result** in this repository. 
 
+Launch the software **FigTree**. Go to **File**, **Open...**. Choose to open the file **Ophio_nucl.treefile**, which stores the tree in **Newick** format.  
 
