@@ -84,8 +84,10 @@ An example of one erroneous region in one sequence (indicated by the yellow arro
 
 > :bulb: **Tip:** In AliView, you can ask it to use any tools that you prefer to perform the alignment. Go to AliView '**Settings**' and the tab '**Align ALL program**'. You can provide the command line and path to any tools that you installed. By default, AliView uses **MUSCLE** for the alignment. I personally prefer **MAFFT**.
 
-# Part 5: Phylogenetic pipeline -- tree inference (including gene concatenation, partition, model selection, and bootstrapping) 
+# Part 5: Phylogenetic pipeline -- tree inference (with gene concatenation, gene partition, model selection, and bootstrapping) and a bit of bioinformatics
+We have everything ready for the tree! We will use the tool **IQTREE** for this purpose. You can check [the installation guide](https://iqtree.github.io/doc/Quickstart) again if you have questions running the tool. 
 
+1) 
 
 bin/iqtree3 -p workshop --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
 
