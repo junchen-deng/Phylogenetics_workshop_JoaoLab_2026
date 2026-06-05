@@ -72,11 +72,15 @@ For rpb1:
 <img width="1055" height="225" alt="Screenshot 2026-06-05 at 15 43 36" src="https://github.com/user-attachments/assets/353cdf06-fb31-4102-8a53-bd077589ed23" />
 <img width="1074" height="212" alt="Screenshot 2026-06-05 at 15 45 36" src="https://github.com/user-attachments/assets/0d10c505-b832-41c6-8a44-282421942c4a" />
 
-> :bulb: **Tip:** Tree inference algorithms are often quite robust. They allow a few percentages of errors and low-density regions. The output tree topologies are often similar. However, the impact can be amplified in a small dataset of a few genes. The best practice is to remove them. Sometimes, errors may occur only in some region within a single sequence. You can often spot it in the alignment, and you should try to trim it from this sequence. 
+> :bulb: **Tip:** Tree inference algorithms are often quite robust. They allow a few percentages of errors and low-density regions. The output tree topologies are often similar (you can keep the untrimmed version and run another tree in the next steps). However, the impact can be amplified in a small dataset of a few genes. The best practice is to remove them. Sometimes, errors may occur only in some region within a single sequence. You can often spot it in the alignment, and you should try to trim it from this sequence. 
 
 An example of one erroneous region in one sequence (indicated by the yellow arrow), which doesn't look right:
 <img width="1307" height="520" alt="Screenshot 2026-06-05 at 16 09 33" src="https://github.com/user-attachments/assets/325abff0-fa79-477b-94e8-d7c85a2b7627" />
 
+5) Save the trimmed alignments as **TEF_trimmed.fna** and **rpb1_trimmed.fna**. You can also download these two files from this repository.
 
+> :bulb: **Tip:** In AliView, you can ask it to use any tools that you prefer to perform the alignment. Go to AliView '**Settings**' and the tab '**Align ALL program**'. You can provide the command line and path to any tools that you installed. By default, AliView uses **Muscle** for the alignment. I personally prefer **Mafft**.
+
+# Part 5: Phylogenetic pipeline -- prepare your list of sequences and alignment
 
 
