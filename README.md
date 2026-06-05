@@ -115,6 +115,11 @@ Take a look at the tree. Where is JPMA317? Is this what you expected? Compare th
 > :bulb: **Tip:** Other output files contain information about model selection and the tree itself. For example, you will find out which bootstrap number represents which bootstrapping method in the file **Ophio_nucl.iqtree**. The number at the bottom of the tree (e.g., 0.04) indicates the estimated number of nucleotide substitutions per site. It is one way to calculate the **genetic distance** between two taxa. 
 
 # Additional resources for nerds
-(DTU Computational Molecular Evolution course)[https://teaching.healthtech.dtu.dk/22115/index.php/22115_-_Computational_Molecular_Evolution#Week_1_(February_4):_Introduction_to_evolutionary_theory_and_population_genetics._Models_of_growth,_selection_and_mutation]  
-(Free book 'Phylogenetics in the Genomic Era')
+[DTU Computational Molecular Evolution course](https://teaching.healthtech.dtu.dk/22115/index.php/22115_-_Computational_Molecular_Evolution#Week_1_(February_4):_Introduction_to_evolutionary_theory_and_population_genetics._Models_of_growth,_selection_and_mutation)  
+[Free book 'Phylogenetics in the Genomic Era'](https://inria.hal.science/PGE/page/table-of-contents)
+
+Junchen Deng
+20260608
+
+
 
