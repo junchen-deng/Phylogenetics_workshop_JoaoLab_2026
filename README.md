@@ -57,10 +57,9 @@ Now let's do the alignment! We will use the tool **AliView**, which is great for
 
 3) Now, click the action '**Align**' and choose **Realign everything as Translated Amino Acids**.
 
-<img width="400" height="373" alt="Screenshot 2026-06-05 at 13 13 34" src="https://github.com/user-attachments/assets/609962a7-72f8-453d-a197-410108e0098f" />  
+<img width="390" height="365" alt="Screenshot 2026-06-05 at 13 16 53" src="https://github.com/user-attachments/assets/5fd053cc-c333-427e-8940-78219f6eac89" />
 
 
- 
 
 > :bulb: **Tip:**
 
