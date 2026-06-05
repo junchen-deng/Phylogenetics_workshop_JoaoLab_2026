@@ -60,7 +60,7 @@ Now let's do the alignment! We will use the tool **AliView**, which is great for
 
 <img width="390" height="365" alt="Screenshot 2026-06-05 at 13 16 53" src="https://github.com/user-attachments/assets/5fd053cc-c333-427e-8940-78219f6eac89" />
 
-4) Examine the alignment. Are you satisfied? Maybe not 100%. You might have noticed the long tails at the ends and some misaligned regions. The length difference is because people often amplify only part of the marker gene as the barcode, but genes extracted from genomes are often in full length. The misalignment can be due to sequencing errors. But at least 
+4) Examine the alignment. Are you satisfied? The core region is aligned well, but you might have noticed the long tails at the ends and some misaligned regions. The length difference is because people often amplify only part of the marker gene as the barcode, but genes extracted from genomes are often in full length. The misalignment can be due to sequencing errors. It is recommended to trim them. There are tools (e.g., trimal) that can help to trim alignments, but you can do it manually for a few genes.  
 
 > :bulb: **Tip:**
 
