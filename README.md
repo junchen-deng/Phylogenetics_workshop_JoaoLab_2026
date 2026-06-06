@@ -63,7 +63,7 @@ Now let's do the alignment! We will use the tool **AliView**, which is great for
 
 4) Examine the alignment. How satisfied are you? Are there any well-aligned regions? You might have noticed the long tails at the ends and some misaligned regions. The length difference is because people often amplify only part of the marker gene as the barcode, but genes extracted from genomes are often in full length. The misalignment can be due to sequencing errors. It is recommended to trim them. There are tools (e.g., [trimAl](https://vicfero.github.io/trimal/)) that can help to trim alignments, but you can do the same thing manually for a few genes.
 
-The goal of trimming is to reduce the errors and enrich the phylogenetically informative regions, which means to remove large misalignments and low-density regions (i.e., tails; regions retained by only a small percentage of samples (<50%)). I would do the following: 
+The goal of trimming is to reduce the errors and enrich the phylogenetically informative regions, which means to remove large misalignments and low-density regions (i.e., tails; regions retained by only a small percentage of samples). I would do the following: 
 
 For TEF:
 <img width="902" height="209" alt="Screenshot 2026-06-05 at 21 11 47" src="https://github.com/user-attachments/assets/51dc7df5-fcf5-4d27-bfa7-8819d10b1607" />
@@ -73,27 +73,27 @@ For rpb1:
 <img width="1055" height="225" alt="Screenshot 2026-06-05 at 15 43 36" src="https://github.com/user-attachments/assets/353cdf06-fb31-4102-8a53-bd077589ed23" />
 <img width="1074" height="212" alt="Screenshot 2026-06-05 at 15 45 36" src="https://github.com/user-attachments/assets/0d10c505-b832-41c6-8a44-282421942c4a" />
 
-> :bulb: **Tip:** Tree inference algorithms are often quite robust. They allow a few percentages of errors and low-density regions. The output tree topologies are often similar (you can keep the untrimmed version and run another tree in the next steps). However, the impact can be amplified in a small dataset of a few genes. The best practice is to remove them. Sometimes, errors may occur only in some region within a single sequence. You can often spot it in the alignment, and you should try to trim it from this sequence. 
+> :bulb: **Tip:** Tree inference algorithms are often quite robust. They allow a few percentages of errors and low-density regions. The output tree topologies are often similar (If you have time, you can keep the untrimmed version and run another tree in the next steps). However, the impact can be amplified in a small dataset of a few genes. The best practice is to remove them. Sometimes, errors may occur only in some region within a single sequence. You can often spot it in the alignment, and you should try to trim it from this sequence. 
 
 An example of one erroneous region in one sequence (indicated by the yellow arrow), which doesn't look right:
 <img width="1307" height="520" alt="Screenshot 2026-06-05 at 16 09 33" src="https://github.com/user-attachments/assets/325abff0-fa79-477b-94e8-d7c85a2b7627" />
 
 5) Save the trimmed alignments as **TEF_trimmed.fna** and **rpb1_trimmed.fna**. You can also download these two files from this repository.
 
-> :bulb: **Tip:** In AliView, you can ask it to use any tools that you prefer to perform the alignment. Go to AliView '**Settings**' and the tab '**Align ALL program**'. You can provide the command line and path to any tools that you installed. By default, AliView uses **MUSCLE** for the alignment. I personally prefer **MAFFT**.
+> :bulb: **Tip:** In AliView, you can ask it to use any aligners that you prefer. Go to AliView '**Settings**' and the tab '**Align ALL program**'. You can provide the command line and path to any tools that you have installed. By default, AliView uses **MUSCLE** for the alignment. I personally prefer **[MAFFT](https://mafft.cbrc.jp/alignment/server/index.html)**.
 
 # Part 5: Phylogenetic pipeline -- tree inference (with gene concatenation, gene partition, model selection, and bootstrapping) and a bit of bioinformatics
 We have everything ready for the tree! We will use the tool **IQTREE** for this purpose.  
 
 1) Within the IQTREE installation folder, create a new folder named '**data**' and put both **TEF_trimmed.fna** and **rpb1_trimmed.fna** inside (It's only to make it easy for everyone. But if you understand a bit more of bioinformatics, you can have this new folder anywhere with any names)
   
-2) Follow the [the IQTREE installation guide](https://iqtree.github.io/doc/Quickstart), open the Command Prompt window (Run **Terminal** app in Mac and **cmd** in Windows), go to the IQTREE installation folder (Use **cd**), and run the following command. ('**data**' indicates the folder where we put the data. It is indeed the path to this folder. If you have your data stored somewhere else, you need to provide the full path.) 
+2) Follow the [the IQTREE installation guide](https://iqtree.github.io/doc/Quickstart), open the Command Prompt window (Run the **Terminal** app in Mac and '**cmd**' in Windows), go to the IQTREE installation folder (Use '**cd**'), and run the following command. ('**data**' indicates the folder where we put the data. It is indeed the path to this folder. If you have your data stored somewhere else, you need to provide the full path.) 
 
 ```
 bin/iqtree3 -p data --prefix Ophio_nucl -m MFP+MERGE -B 1000 --alrt 1000
 ```
 
-To understand what each argument does, run '**bin/iqtree3 --help** ' in the Prompt window. We have two genes, and each of them likely fits with a different model. Therefore, it is best to separate them (i.e., **partition by gene**). **-p** usually takes in a partition file. However, IQTREE can do the partition automatically if you input a data folder. This is what we are doing here. **--prefix** sets the prefix to the names of all output files. **-m** sets the model. **MFP** automatically determines the best-fit model by testing all available models (i.e., **Model Selection**), and **MERGE** merges partitions to increase model fit (i.e., if multiple partitions fit similar models, treating them as one may be better). **-B** enables Ultra-fast bootstrapping and **--alrt** enables SH-aLRT bootstrapping.   
+To understand what each argument does, run '**bin/iqtree3 --help** ' in the Prompt window. We have two genes, and each of them likely fits with a different model. Therefore, it is best to treat them separately (i.e., **partition by gene**). **-p** usually takes in a partition file. However, IQTREE can do the partition automatically if you input a data folder. This is what we are doing here. **--prefix** sets the prefix to the names of all output files. **-m** sets the model. **MFP** automatically determines the best-fit model by testing all available models (i.e., **Model Selection**), and **MERGE** merges partitions to increase model fit (i.e., if multiple partitions fit similar models, treating them as one may be better). **-B** enables Ultra-fast bootstrapping and **--alrt** enables SH-aLRT bootstrapping.   
 
 If you have time, you can run IQTREE on a single alignment, TEF or rpb1, and compare the results later. The command is like this: 
 
@@ -101,7 +101,7 @@ If you have time, you can run IQTREE on a single alignment, TEF or rpb1, and com
 bin/iqtree3 -s PATH_TO_THE_ALIGNMENT --prefix Ophio_nucl -m MFP -B 1000 --alrt 1000
 ```
 
-> :bulb: **Tip:** There are many different ways of partitioning your alignment (e.g., partition by codon). In this case, you will need to prepare your own partition file and include both **-s** (for data) and **-p** (for partition).  
+> :bulb: **Tip:** There are many different ways of partitioning your alignment (e.g., partition by codon). In this case, you will need to prepare your own partition file and include both **-s** (for data) and **-p** (for partition). Note that we use two types of bootstraps. It is recommended because they use different algorithms to calculate the value, and the Ultrafast bootstrapping is often overconfident. You would be confident with a clade if SH-aLRT >= 80% and UFboot >= 95%. Read more [here](https://iqtree.github.io/doc/Frequently-Asked-Questions).  
 
 # Part 6: Phylogenetic pipeline -- tree visualisation 
 If IQTREE runs successfully, it will produce a long series of logs on the screen. The output files are generated in the location where you run IQTREE. In our case, this will be the IQTREE installation folder. You can also find the output of the run I did under the folder **IQTREE_result** in this repository. 
