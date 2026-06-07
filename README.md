@@ -115,6 +115,8 @@ Take a look at the tree. Where is JPMA317? Is this what you expected? Look at th
 > Additionally, there are other free tools to visualise the tree, such as the website [iTOL](https://itol.embl.de). It may provide more functions than FigTree. But I often just save the tree in PDF and use a vector image editor, such as [Inkscape](https://inkscape.org), to do further editing. 
 
 # Additional resources for nerds
+[NGPhylogeny.fr](https://ngphylogeny.fr) -- online pipeline to run phylogenetic analysis
+[EMBO Computational Molecular Evolution course](https://meetings.embo.org/event/25-comp-mol-evolution) -- It happens yearly, rotating between Crete Island, Greece and Cambridge, UK.
 [DTU Computational Molecular Evolution course](https://teaching.healthtech.dtu.dk/22115/index.php/22115_-_Computational_Molecular_Evolution#Week_1_(February_4):_Introduction_to_evolutionary_theory_and_population_genetics._Models_of_growth,_selection_and_mutation)  
 [Free book 'Phylogenetics in the Genomic Era'](https://inria.hal.science/PGE/page/table-of-contents)
 
