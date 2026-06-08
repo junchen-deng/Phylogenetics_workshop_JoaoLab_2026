@@ -98,7 +98,7 @@ To understand what each argument does, run '**bin/iqtree3 --help** ' in the Prom
 If you have time, you can run IQTREE on a single alignment, TEF or rpb1, and compare the results later. The command is like this: 
 
 ```
-bin/iqtree3 -s PATH_TO_THE_ALIGNMENT --prefix Ophio_nucl -m MFP -B 1000 --alrt 1000
+bin/iqtree3 -s data/TEF_trimmed.fna --prefix Ophio_nucl_TEF -m MFP -B 1000 --alrt 1000
 ```
 
 > :bulb: **Tip:** There are many different ways of partitioning your alignment (e.g., partition by codon). In this case, you will need to prepare your own partition file and include both **-s** (for data) and **-p** (for partition). Note that we use two types of bootstraps. It is recommended because they use different algorithms to calculate the value, and the Ultrafast bootstrapping is often overconfident. You would be confident with a clade if SH-aLRT >= 80% and UFboot >= 95%. Read more [here](https://iqtree.github.io/doc/Frequently-Asked-Questions).  
